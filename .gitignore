@@ -1,0 +1,34 @@
+# Python仮想環境
+venv/
+
+# Visual Studio関連
+.vs/
+.vscode/
+
+# Jupyter Notebookチェックポイント
+.ipynb_checkpoints/
+
+# 一時ファイル
+*.pyc
+__pycache__/
+
+# その他不要なファイル
+.DS_Store
+
+# 特定のフォルダを無視
+Docker/
+KRK_Lesson/
+Articles/
+Kaggle/
+NaturalLanguage/
+Samurai/
+Usage(tool)_v0.91/
+dog_cat_pic/
+initial_set/
+milmil/
+ohter/
+score_collector/
+send_to_Rin/
+data/
+fonts/
+git/

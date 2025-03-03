@@ -1,0 +1,10 @@
+pymupdf
+pytesseract
+textdistance
+streamlit
+pandas
+jellyfish
+pdf2image
+openpyxl
+pillow
+scikit-learn

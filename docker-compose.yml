@@ -1,0 +1,21 @@
+services:
+  medical-ocr:
+    build:
+      context: .
+    volumes:
+      - ./data:/app/data      
+      - ./template:/app/template
+      - ./amount_words.csv:/app/amount_words.csv # amount_words.csvをマウント      
+      - ./phonebook.csv:/app/phonebook.csv # phonebook.csvをマウント
+      - ./patients.csv:/app/patients.csv # patients.csvをマウント
+    ports:
+      - "127.0.0.1:8501:8501" # ローカルホストからのみアクセス可能に制限
+    environment:
+      TESSDATA_PREFIX: /usr/share/tesseract-ocr/4.00/tessdata
+      LANG: ja_JP.UTF-8
+      LC_ALL: ja_JP.UTF-8
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
